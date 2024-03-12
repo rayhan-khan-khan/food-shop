@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Shope</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="tailwind.config.js" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header class="">
+      <!-- nav bar -->
+     <section class="drop-shadow bg-base-100">
+      <div class="navbar  bg-base-100 md:max-w-6xl md:mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu font-bold menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li>
+                <a>Category</a>
+              </li>
+              <li><a>Products</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Elements</a></li>
+            </ul>
+          </div>
+          <svg
+            class="hidden lg:flex"
+            xmlns="http://www.w3.org/2000/svg"
+            width="23"
+            height="23"
+            viewBox="0 0 23 23"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_8341_8589)">
+              <path
+                d="M0.25 4.16665H16.75V5.99998H0.25V4.16665ZM0.25 10.5833H11.25V12.4166H0.25V10.5833ZM0.25 17H16.75V18.8333H0.25V17Z"
+                fill="#2B2B2D"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_8341_8589">
+                <rect
+                  width="22.48"
+                  height="22"
+                  fill="white"
+                  transform="matrix(1 0 0 -1 0.25 22.5)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu text-gray-600 text-xs font-bold menu-horizontal px-1">
+            <li><a href="">Home</a></li>
+            <li>
+              <details>
+                <summary>Category</summary>
+                <ul class=""></ul>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Products</summary>
+                <ul class=""></ul>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Pages</summary>
+                <ul class=""></ul>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Blog</summary>
+                <ul class=""></ul>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Elements</summary>
+                <ul class=""></ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="21"
+            height="21"
+            viewBox="0 0 21 21"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_8341_8591)">
+              <path
+                d="M5.55 9.4C5.93889 10.0889 6.41389 10.7139 6.975 11.275C7.53611 11.8361 8.16111 12.3111 8.85 12.7L9.58333 11.6667C9.70556 11.4889 9.86944 11.3778 10.075 11.3333C10.2806 11.2889 10.4778 11.3167 10.6667 11.4167C11.8556 12.0722 13.1278 12.45 14.4833 12.55C14.6944 12.5722 14.875 12.6611 15.025 12.8167C15.175 12.9722 15.25 13.1611 15.25 13.3833V17.1C15.25 17.3111 15.1778 17.4972 15.0333 17.6583C14.8889 17.8194 14.7111 17.9111 14.5 17.9333C14.0556 17.9778 13.6111 18 13.1667 18C11.4111 18 9.73333 17.6611 8.13333 16.9833C6.58889 16.3278 5.22222 15.4056 4.03333 14.2167C2.84444 13.0278 1.92222 11.6611 1.26667 10.1167C0.588889 8.51667 0.25 6.83889 0.25 5.08333C0.25 4.63889 0.272222 4.19444 0.316667 3.75C0.338889 3.53889 0.430556 3.36111 0.591667 3.21667C0.752778 3.07222 0.938889 3 1.15 3H4.86667C5.08889 3 5.27778 3.075 5.43333 3.225C5.58889 3.375 5.67778 3.55555 5.7 3.76667C5.8 5.12222 6.17778 6.39444 6.83333 7.58333C6.93333 7.77222 6.96111 7.96944 6.91667 8.175C6.87222 8.38056 6.76111 8.54444 6.58333 8.66667L5.55 9.4ZM3.45 8.85L5.03333 7.71667C4.58889 6.75 4.28333 5.73333 4.11667 4.66667H1.91667V5.08333C1.91667 6.60555 2.21111 8.06667 2.8 9.46667C3.36667 10.8111 4.16944 12.0028 5.20833 13.0417C6.24722 14.0806 7.43889 14.8833 8.78333 15.45C10.1833 16.0389 11.6444 16.3333 13.1667 16.3333H13.5833V14.1333C12.5167 13.9667 11.5 13.6611 10.5333 13.2167L9.4 14.8C8.94444 14.6222 8.5 14.4111 8.06667 14.1667L8.01667 14.15C7.20556 13.6833 6.46667 13.1167 5.8 12.45C5.13333 11.7833 4.56667 11.0444 4.1 10.2333L4.08333 10.1833C3.83889 9.75 3.62778 9.30556 3.45 8.85Z"
+                fill="#212529"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_8341_8591">
+                <rect
+                  width="20.48"
+                  height="20"
+                  fill="white"
+                  transform="matrix(1 0 0 -1 0.25 20.5)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+          <a class="ml-2">+123 ( 456 ) ( 7890 )</a>
+        </div>
+      </div>
+     </section>
+        <!-- banner -->
+        <section class="bg-[#ffbfa6]">
+          <div class="flex flex-col p-2 md:flex-row md:gap-32 gap-5 md:py-36 py-8 max-w-6xl mx-auto  items-center">
+            <div class="space-y-2 text-center md:text-start">
+              <p class="font-extrabold"><span class="text-[#F53E32] underline">100%</span> Organic Vegetables</p>
+              <h1 class="text-5xl font-bold">The best way to
+                stuff your wallet.</h1>
+                <p class="text-[#7A7A7A]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  reiciendis beatae consequuntur.</p>
+                  <button class="text-white bg-[#F53E32] py-2 px-4 rounded font-semibold">Shop Now</button>
+            </div>
+            <!-- img banner -->
+            <div>
+              <img class="rounded-tl-full" src="images/bannerImg.jpg" alt="">
+            </div>
+          </div>
+          </section>
+    </header>
+    <main class="">
+          <!-- sum main -->
+          <main class="max-w-6xl mx-auto p-5">
+               <!-- simple cart section -->
+      <section>
+        <div class="flex flex-col md:flex-row gap-5 my-16">
+          <div class="md:w-1/2 space-y-1">
+            <div class="bg-[#E9E9E9] rounded font-semibold text-center py-3">
+              <p class="text-[#F53E32]">Cake & Milk</p>
+              <p class="text-[#7A7A7A]">(65 items)</p>
+            </div>
+            <div class="bg-[#E9E9E9] rounded font-semibold text-center py-3">
+              <p class="text-[#2B2B2D]">Fresh Meat</p>
+              <p class="text-[#7A7A7A]">(30 items)</p>
+            </div>
+            <div class="bg-[#E9E9E9] rounded font-semibold text-center py-3">
+              <p class="text-[#2B2B2D]">Vegetables</p>
+              <p class="text-[#7A7A7A]">(25 items)</p>
+            </div>
+            <div class="bg-[#E9E9E9] rounded font-semibold text-center py-3">
+              <p class="text-[#2B2B2D]">Apple & Mango</p>
+              <p class="text-[#7A7A7A]">(45 items)</p>
+            </div>
+            <div class="bg-[#E9E9E9] rounded font-semibold text-center py-3">
+              <p class="text-[#2B2B2D]">Strawberry</p>
+              <p class="text-[#7A7A7A]">(68 items)</p>
+            </div>
+            <div class="bg-[#E9E9E9] rounded font-medium text-center py-6">
+              <p class="text-[#F53E32] font-semibold ">View More</p>
+              
+            </div>
+          </div>
+          <div class="md:w-1/2 mb-4 relative ">
+            <img class="rounded-lg" src="images/sectioncart (2).png" alt="">
+           <h1 class="flex top-0  absolute   text-white pb-8 pr-8 pt-4 pl-4 rounded-b-full rounded-tr-full  bg-[#54aa1b66]">
+            <p class="text-3xl font-bold">50</p>
+            <span class="ml-2 font-mono">% <br> OFF</span> 
+           </h1>          
+           <div class="-mt-24 text-center">
+            <h3 class="text-xl text-white font-bold mb-2">Cake</h3>
+            <button class="bg-[#F53E32] text-white font-semibold px-4 py-2 rounded">Shop Now</button>
+           </div>
+          </div>
+          <div class="md:w-1/2   relative ">
+            <img class="rounded-lg " src="images/sectioncart (1).png" alt="">
+           <h1 class="flex top-0 absolute opacity-45  rounded-lg text-white pb-8 pr-8 pt-4 pl-4 rounded-b-full rounded-tr-full  bg-[#000000]">
+            <p class="text-3xl font-bold ">40</p>
+            <span class="ml-2 font-mono">% <br> OFF</span> 
+           </h1>          
+           <div class="-mt-24 text-center">
+            <h3 class="text-xl text-white font-bold mb-2">Milk</h3>
+            <button class="bg-[#F53E32] text-white font-semibold px-4 py-2 rounded">Shop Now</button>
+           </div>
+          </div>
+       
+          
+        </div>
+      </section>
+      <!-- Popular Products -->
+      <section class="mb-10 ">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold">Popular Products</h2>
+          <p class="text-[#7A7A7A] max-w-xl my-4 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore lacus vel facilisis.</p>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-4">
+          <!-- All -->
+        <div class=" md:w-96">
+        <div class="space-y-1">
+          <div class="">
+            <div class="bg-[#E9E9E9] rounded flex justify-between px-5 py-3 hover:text-[#F53E32]">
+             <p class="font-bold text-sm">All</p>
+             <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-5">
+               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+             </svg>
+             </p>
+            </div>
+         </div>
+         <div class="">
+            <div class="bg-[#E9E9E9] rounded flex justify-between px-5 py-3 hover:text-[#F53E32]">
+             <p class="font-bold text-sm">Snack</p>
+             <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-5">
+               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+             </svg>
+             </p>
+            </div>
+         </div>
+         <div class="">
+            <div class="bg-[#E9E9E9] rounded flex justify-between px-5 py-3 hover:text-[#F53E32]">
+             <p class="font-bold text-sm">Vegetable</p>
+             <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-5">
+               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+             </svg>
+             </p>
+            </div>
+         </div>
+         <div class="">
+            <div class="bg-[#E9E9E9] rounded flex justify-between px-5 py-3 hover:text-[#F53E32]">
+             <p class="font-bold text-sm">Fruit</p>
+             <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-5">
+               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+             </svg>
+             </p>
+            </div>
+         </div>
+         <div class="">
+            <div class="bg-[#E9E9E9] rounded flex justify-between px-5 py-3 hover:text-[#F53E32]">
+             <p class="font-bold text-sm">Bakery</p>
+             <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-5">
+               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+             </svg>
+             </p>
+            </div>
+         </div>
+        </div>
+        <div class="relative flex justify-center md:j">
+          <img class="mt-5 flex  md:ml-0 lg:h-[620px]" src="images/Fruits.jpg" alt="">
+          <div class="absolute top-0 p-4 mt-24 space-y-2">
+            <h1 class="text-4xl font-serif text-white">Juicy</h1>
+            <h1 class="text-4xl font-extrabold text-[#F7E8AA]">Fruits</h1>
+            <p class="text-white font-serif">100% Natural</p>
+            <button class="py-2 px-4 bg-[#F53E32] text-white rounded-lg font-semibold mt-2 text-sm">Shop Now</button>
+          </div>
+        </div>
+
+        </div>
+        <!-- main  card section -->
+        <div class="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+          <div class="border md:h-[430px] p-3 pb-4">
+            <img class="border w-96" src="images/card-img/cart (1).jpg" alt="">
+            <p class="text-center -mt-8"><i class="fa-solid bg-[#E9E9E9]  fa-lock border-2 border-gray-300  p-4 rounded-full text-[#F53E32]"></i></p>
+            <div class="text-center space-y-1 pb-1">
+              <h2 class="text-[#777777]">Vegetables</h2>
+              <div class="rating mx-auto w-[140px]">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600"  />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" checked/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" />
+                <p class="text-sm font-semibold text-[#777] ml-4">(4.5)</p>
+              </div>
+              <p class="font-semibold ">Fresh organic villa farm lomon <br>
+                500gm pack</p>
+                <p><span class="text-xl font-bold text-[#F53E32]">$120.25</span>  <span class="line-through ml-4 text-[#777] font-medium">$123.25</span></p>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="border md:h-[430px] p-3 pb-4">
+            <img class="border w-96" src="images/card-img/cart (2).jpg" alt="">
+            <p class="text-center -mt-8"><i class="fa-solid bg-[#E9E9E9]  fa-lock border-2 border-gray-300  p-4 rounded-full text-[#F53E32]"></i></p>
+            <div class="text-center space-y-1 pb-1">
+              <h2 class="text-[#777777]">Vegetables</h2>
+              <div class="rating mx-auto w-[140px]">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600"  />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" checked/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" />
+                <p class="text-sm font-semibold text-[#777] ml-4">(4.5)</p>
+              </div>
+              <p class="font-semibold ">Fresh organic villa farm lomon <br>
+                500gm pack</p>
+                <p><span class="text-xl font-bold text-[#F53E32]">$120.25</span>  <span class="line-through ml-4 text-[#777] font-medium">$123.25</span></p>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="border md:h-[430px] p-3 pb-4">
+            <img class="border w-96" src="images/card-img/cart (3).jpg" alt="">
+            <p class="text-center -mt-8"><i class="fa-solid bg-[#E9E9E9]  fa-lock border-2 border-gray-300  p-4 rounded-full text-[#F53E32]"></i></p>
+            <div class="text-center space-y-1 pb-1">
+              <h2 class="text-[#777777]">Vegetables</h2>
+              <div class="rating mx-auto w-[140px]">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600"  />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" checked/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" />
+                <p class="text-sm font-semibold text-[#777] ml-4">(4.5)</p>
+              </div>
+              <p class="font-semibold ">Fresh organic villa farm lomon <br>
+                500gm pack</p>
+                <p><span class="text-xl font-bold text-[#F53E32]">$120.25</span>  <span class="line-through ml-4 text-[#777] font-medium">$123.25</span></p>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="border md:h-[430px] p-3 pb-4">
+            <img class="border w-96" src="images/card-img/cart (4).jpg" alt="">
+            <p class="text-center -mt-8"><i class="fa-solid bg-[#E9E9E9]  fa-lock border-2 border-gray-300  p-4 rounded-full text-[#F53E32]"></i></p>
+            <div class="text-center space-y-1 pb-1">
+              <h2 class="text-[#777777]">Vegetables</h2>
+              <div class="rating mx-auto w-[140px]">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600"  />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" checked/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" />
+                <p class="text-sm font-semibold text-[#777] ml-4">(4.5)</p>
+              </div>
+              <p class="font-semibold ">Fresh organic villa farm lomon <br>
+                500gm pack</p>
+                <p><span class="text-xl font-bold text-[#F53E32]">$120.25</span>  <span class="line-through ml-4 text-[#777] font-medium">$123.25</span></p>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div class="border md:h-[430px] p-3 pb-4">
+            <img class="border w-96" src="images/card-img/cart (5).jpg" alt="">
+            <p class="text-center -mt-8"><i class="fa-solid bg-[#E9E9E9]  fa-lock border-2 border-gray-300  p-4 rounded-full text-[#F53E32]"></i></p>
+            <div class="text-center space-y-1 pb-1">
+              <h2 class="text-[#777777]">Vegetables</h2>
+              <div class="rating mx-auto w-[140px]">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600"  />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" checked/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" />
+                <p class="text-sm font-semibold text-[#777] ml-4">(4.5)</p>
+              </div>
+              <p class="font-semibold ">Fresh organic villa farm lomon <br>
+                500gm pack</p>
+                <p><span class="text-xl font-bold text-[#F53E32]">$120.25</span>  <span class="line-through ml-4 text-[#777] font-medium">$123.25</span></p>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div class="border md:h-[430px] p-3 pb-4">
+            <img class="border w-96" src="images/card-img/cart (6).png" alt="">
+            <p class="text-center -mt-8"><i class="fa-solid bg-[#E9E9E9]  fa-lock border-2 border-gray-300  p-4 rounded-full text-[#F53E32]"></i></p>
+            <div class="text-center space-y-1 pb-1">
+              <h2 class="text-[#777777]">Vegetables</h2>
+              <div class="rating mx-auto w-[140px]">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600"  />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" checked/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-600" />
+                <p class="text-sm font-semibold text-[#777] ml-4">(4.5)</p>
+              </div>
+              <p class="font-semibold ">Fresh organic villa farm lomon <br>
+                500gm pack</p>
+                <p><span class="text-xl font-bold text-[#F53E32]">$120.25</span>  <span class="line-through ml-4 text-[#777] font-medium">$123.25</span></p>
+            </div>
+          </div>
+        
+        </div>
+        </div>
+      </section>
+      <!-- Healthy Bakery Products-->
+      <section class="mb-12 grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+              <div class="bg-green-300 justify-between h-[190px] flex gap-3 items-center pl-4 rounded-lg">
+                <div>
+                <h1 class="text-xl font-bold">Healthy <br>
+                  Bakery Products</h1>
+                  <p class="text-[#777] mt-2"> <span class="text-red-600 font-bold text-xl">30%</span> Off on first order</p>
+                  <button class="py-2 px-4 bg-red-600 text-white rounded-lg font-semibold mt-2">Shop Now</button>
+                </div>
+              <div>
+                <img class="w-36 rounded-tr-full rounded-bl-full" src="images/healthy.png" alt="">
+              </div>
+              </div>
+              <div class="bg-[#f5a35b] justify-between h-[190px] flex gap-3 items-center pl-4 rounded-lg">
+               <div>
+                <h1 class="text-xl font-bold">Healthy <br>
+                  Bakery Products</h1>
+                  <p class="text-[#777]"> <span class="text-red-600 font-bold text-xl">30%</span> Off on first order</p>
+               </div>
+              <div>
+                <img class="w-36 rounded-tr-full rounded-bl-full" src="images/healthy.png" alt="">
+              </div>
+              </div>
+              <div class="bg-[#8cc039] justify-between h-[190px] flex gap-3 items-center pl-4 rounded-lg">
+               <div>
+                <h1 class="text-xl font-bold">Healthy <br>
+                  Bakery Products</h1>
+                  <p class="text-[#777]"> <span class="text-red-600 font-bold text-xl">30%</span> Off on first order</p>
+               </div>
+              <div>
+                <img class="w-36 rounded-tr-full rounded-bl-full" src="images/healthy.png" alt="">
+              </div>
+              </div>
+      </section>
+      <section class="my-10 grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+        <!-- Product Packing -->
+        <div class="bg-[#F7F7F8] px-5 py-5 rounded-lg border text-center">
+          <p class="flex justify-center my-2 pt-8"><svg xmlns="http://www.w3.org/2000/svg" width="62" height="2" viewBox="0 0 62 2" fill="none">
+            <g clip-path="url(#clip0_8330_1146)">
+            <path d="M28.4219 0.596689C30.7402 0.588356 32.9241 0.574884 34.9736 0.556273C37.023 0.537662 38.8877 0.514745 40.5676 0.487523V0.35669H5.2897V0.487523C6.96961 0.514745 8.8343 0.537662 10.8838 0.556273C12.9333 0.574884 15.1171 0.588356 17.4354 0.596689C18.0066 0.580578 18.7793 0.567801 19.7537 0.558356C20.728 0.548912 21.7863 0.544189 22.9287 0.544189C24.071 0.544189 25.1293 0.548912 26.1037 0.558356C27.078 0.567801 27.8508 0.580578 28.4219 0.596689ZM28.9259 0.680023C28.5227 0.701134 27.7668 0.718495 26.6581 0.732106C25.5493 0.745717 24.3062 0.752523 22.9287 0.752523C21.5511 0.752523 20.308 0.745717 19.1993 0.732106C18.0906 0.718495 17.3346 0.701134 16.9314 0.680023C12.6981 0.666134 8.8175 0.638078 5.2897 0.595856V1.02336H40.5676V0.595856C37.0398 0.638078 33.1593 0.666134 28.9259 0.680023ZM2.76985 0.273356H43.0875C43.793 0.273356 44.3894 0.277384 44.8766 0.285439C45.3638 0.293495 45.6073 0.303356 45.6073 0.315023V1.06502C45.6073 1.07669 45.3638 1.08655 44.8766 1.09461C44.3894 1.10266 43.793 1.10669 43.0875 1.10669H2.76985C2.06429 1.10669 1.46793 1.10266 0.980757 1.09461C0.493586 1.08655 0.25 1.07669 0.25 1.06502V0.315023C0.25 0.303356 0.493586 0.293495 0.980757 0.285439C1.46793 0.277384 2.06429 0.273356 2.76985 0.273356Z" fill="#64B496"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_8330_1146">
+            <rect width="61.1515" height="1" fill="white" transform="matrix(1 0 0 -1 0.25 1.18994)"/>
+            </clipPath>
+            </defs>
+            </svg></p>
+          <h3 class="text-xl font-medium">Product  Packing</h3>
+          <p class="text-[#7A7A7A] mt-2">Lorem ipsum dolor sit amet,
+            consectetur adipisicing.</p>
+        </div>
+        <!-- Product Packing -->
+        <div class=" bg-[#F7F7F8] px-5 py-5 rounded-lg border text-center">
+          <p class="flex justify-center my-2 pt-8"><svg xmlns="http://www.w3.org/2000/svg" width="62" height="2" viewBox="0 0 62 2" fill="none">
+            <g clip-path="url(#clip0_8330_1146)">
+            <path d="M28.4219 0.596689C30.7402 0.588356 32.9241 0.574884 34.9736 0.556273C37.023 0.537662 38.8877 0.514745 40.5676 0.487523V0.35669H5.2897V0.487523C6.96961 0.514745 8.8343 0.537662 10.8838 0.556273C12.9333 0.574884 15.1171 0.588356 17.4354 0.596689C18.0066 0.580578 18.7793 0.567801 19.7537 0.558356C20.728 0.548912 21.7863 0.544189 22.9287 0.544189C24.071 0.544189 25.1293 0.548912 26.1037 0.558356C27.078 0.567801 27.8508 0.580578 28.4219 0.596689ZM28.9259 0.680023C28.5227 0.701134 27.7668 0.718495 26.6581 0.732106C25.5493 0.745717 24.3062 0.752523 22.9287 0.752523C21.5511 0.752523 20.308 0.745717 19.1993 0.732106C18.0906 0.718495 17.3346 0.701134 16.9314 0.680023C12.6981 0.666134 8.8175 0.638078 5.2897 0.595856V1.02336H40.5676V0.595856C37.0398 0.638078 33.1593 0.666134 28.9259 0.680023ZM2.76985 0.273356H43.0875C43.793 0.273356 44.3894 0.277384 44.8766 0.285439C45.3638 0.293495 45.6073 0.303356 45.6073 0.315023V1.06502C45.6073 1.07669 45.3638 1.08655 44.8766 1.09461C44.3894 1.10266 43.793 1.10669 43.0875 1.10669H2.76985C2.06429 1.10669 1.46793 1.10266 0.980757 1.09461C0.493586 1.08655 0.25 1.07669 0.25 1.06502V0.315023C0.25 0.303356 0.493586 0.293495 0.980757 0.285439C1.46793 0.277384 2.06429 0.273356 2.76985 0.273356Z" fill="#64B496"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_8330_1146">
+            <rect width="61.1515" height="1" fill="white" transform="matrix(1 0 0 -1 0.25 1.18994)"/>
+            </clipPath>
+            </defs>
+            </svg></p>
+          <h3 class="text-xl font-medium">24X7 Support</h3>
+          <p class="text-[#7A7A7A] mt-2">Lorem ipsum dolor sit amet,
+            consectetur adipisicing.</p>
+        </div>
+        <!-- Product Packing -->
+        <div class=" bg-[#F7F7F8] px-5 py-5 rounded-lg border text-center">
+          <p class="flex justify-center my-2 pt-8"><svg xmlns="http://www.w3.org/2000/svg" width="62" height="2" viewBox="0 0 62 2" fill="none">
+            <g clip-path="url(#clip0_8330_1146)">
+            <path d="M28.4219 0.596689C30.7402 0.588356 32.9241 0.574884 34.9736 0.556273C37.023 0.537662 38.8877 0.514745 40.5676 0.487523V0.35669H5.2897V0.487523C6.96961 0.514745 8.8343 0.537662 10.8838 0.556273C12.9333 0.574884 15.1171 0.588356 17.4354 0.596689C18.0066 0.580578 18.7793 0.567801 19.7537 0.558356C20.728 0.548912 21.7863 0.544189 22.9287 0.544189C24.071 0.544189 25.1293 0.548912 26.1037 0.558356C27.078 0.567801 27.8508 0.580578 28.4219 0.596689ZM28.9259 0.680023C28.5227 0.701134 27.7668 0.718495 26.6581 0.732106C25.5493 0.745717 24.3062 0.752523 22.9287 0.752523C21.5511 0.752523 20.308 0.745717 19.1993 0.732106C18.0906 0.718495 17.3346 0.701134 16.9314 0.680023C12.6981 0.666134 8.8175 0.638078 5.2897 0.595856V1.02336H40.5676V0.595856C37.0398 0.638078 33.1593 0.666134 28.9259 0.680023ZM2.76985 0.273356H43.0875C43.793 0.273356 44.3894 0.277384 44.8766 0.285439C45.3638 0.293495 45.6073 0.303356 45.6073 0.315023V1.06502C45.6073 1.07669 45.3638 1.08655 44.8766 1.09461C44.3894 1.10266 43.793 1.10669 43.0875 1.10669H2.76985C2.06429 1.10669 1.46793 1.10266 0.980757 1.09461C0.493586 1.08655 0.25 1.07669 0.25 1.06502V0.315023C0.25 0.303356 0.493586 0.293495 0.980757 0.285439C1.46793 0.277384 2.06429 0.273356 2.76985 0.273356Z" fill="#64B496"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_8330_1146">
+            <rect width="61.1515" height="1" fill="white" transform="matrix(1 0 0 -1 0.25 1.18994)"/>
+            </clipPath>
+            </defs>
+            </svg></p>
+          <h3 class="text-xl font-medium">Delivery in 5 Days</h3>
+          <p class="text-[#7A7A7A] mt-2">Lorem ipsum dolor sit amet,
+            consectetur adipisicing.</p>
+        </div>
+        <!-- Product Packing -->
+        <div class=" bg-[#F7F7F8] px-5 py-5 rounded-lg border text-center">
+          <p class="flex justify-center my-2 pt-8"><svg xmlns="http://www.w3.org/2000/svg" width="62" height="2" viewBox="0 0 62 2" fill="none">
+            <g clip-path="url(#clip0_8330_1146)">
+            <path d="M28.4219 0.596689C30.7402 0.588356 32.9241 0.574884 34.9736 0.556273C37.023 0.537662 38.8877 0.514745 40.5676 0.487523V0.35669H5.2897V0.487523C6.96961 0.514745 8.8343 0.537662 10.8838 0.556273C12.9333 0.574884 15.1171 0.588356 17.4354 0.596689C18.0066 0.580578 18.7793 0.567801 19.7537 0.558356C20.728 0.548912 21.7863 0.544189 22.9287 0.544189C24.071 0.544189 25.1293 0.548912 26.1037 0.558356C27.078 0.567801 27.8508 0.580578 28.4219 0.596689ZM28.9259 0.680023C28.5227 0.701134 27.7668 0.718495 26.6581 0.732106C25.5493 0.745717 24.3062 0.752523 22.9287 0.752523C21.5511 0.752523 20.308 0.745717 19.1993 0.732106C18.0906 0.718495 17.3346 0.701134 16.9314 0.680023C12.6981 0.666134 8.8175 0.638078 5.2897 0.595856V1.02336H40.5676V0.595856C37.0398 0.638078 33.1593 0.666134 28.9259 0.680023ZM2.76985 0.273356H43.0875C43.793 0.273356 44.3894 0.277384 44.8766 0.285439C45.3638 0.293495 45.6073 0.303356 45.6073 0.315023V1.06502C45.6073 1.07669 45.3638 1.08655 44.8766 1.09461C44.3894 1.10266 43.793 1.10669 43.0875 1.10669H2.76985C2.06429 1.10669 1.46793 1.10266 0.980757 1.09461C0.493586 1.08655 0.25 1.07669 0.25 1.06502V0.315023C0.25 0.303356 0.493586 0.293495 0.980757 0.285439C1.46793 0.277384 2.06429 0.273356 2.76985 0.273356Z" fill="#64B496"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_8330_1146">
+            <rect width="61.1515" height="1" fill="white" transform="matrix(1 0 0 -1 0.25 1.18994)"/>
+            </clipPath>
+            </defs>
+            </svg></p>
+          <h3 class="text-xl font-medium">Payment Secure</h3>
+          <p class="text-[#7A7A7A] mt-2">Lorem ipsum dolor sit amet,
+            consectetur adipisicing.</p>
+        </div> 
+      </section>
+          </main>
+          <!-- bejal -->
+          <section >
+            <img class="mb-10" src="images/Section.png" alt="">
+          </section>
+
+          <!-- perent section -->
+
+    </main>
+    <footer></footer>
+  </body>
+</html>
